@@ -1,0 +1,51 @@
+<style>
+    /* Estilo para el fondo de la página */
+    body {
+        background-color: #1a1a1a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    /* Estilo para las 'tablitas' individuales de cada premio */
+    table table {
+        background-color: #2c2c2c; /* Fondo gris oscuro para la celda */
+        border: 2px solid #d4af37 !important; /* Borde color oro */
+        border-radius: 10px; /* Bordes redondeados */
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s; /* Animación suave */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    /* Efecto al pasar el mouse sobre una tablita */
+    table table:hover {
+        transform: scale(1.05); /* Se agranda un poquito */
+        box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4); /* Brillo dorado */
+        border-color: #ffffff !important; /* El borde cambia a blanco */
+    }
+
+    /* Estilo para las imágenes dentro de las tablas */
+    table img {
+        border-bottom: 2px solid #d4af37; /* Línea divisoria bajo la foto */
+        filter: grayscale(20%); /* Un toque de estilo cinematográfico */
+    }
+
+    /* Estilo para el texto (lista) */
+    ul {
+        list-style-type: none; /* Quita el punto de la lista */
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        color: #f1f1f1;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        letter-spacing: 1px;
+    }
+
+    /* Quitar bordes a la tabla maestra (la que organiza las filas) */
+    table[width="100%"] {
+        border-collapse: separate;
+        border-spacing: 15px; /* Espacio entre las tablitas */
+    }
+</style>
